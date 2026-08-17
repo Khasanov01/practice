@@ -26,3 +26,20 @@ print(f"the result(3):{result}")
 result=course.replace("AI", "artificial intelligance")
 print(f"the result(4):{result}")
 print(course)
+
+print("========= boolean ========")
+#Functions> type() input() bool() int() str()
+y = input("give your input for y:")
+print(f"y is: {y}")
+
+result=y.isnumeric()
+print(f"input is {result}")
+
+#truthy and falsy values
+#truthy: true, 100, -100, "abc"
+#falsy: false, 0, "", none
+test_falsy="" or False or None or 0
+print("the test_falsy", bool(test_falsy))
+
+test_truthy="abc" or True or 100
+print("the test_truthy", bool(test_truthy))
