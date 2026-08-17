@@ -43,3 +43,13 @@ print('result3:', result3)
 
 result4=give_greet("justin")
 print('result3:', result4)
+
+
+print("======= scopes =======")
+b=100 #3
+
+def calculate(a, b): #2
+    c= a*b #1
+    print('c value is', c)
+
+calculate(50, 70)
