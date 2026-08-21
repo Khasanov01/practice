@@ -69,8 +69,24 @@ print("delete:", animals)
 exist = animals.index("cat")
 print("cat exist:", exist)
 
-animals.clear()
-print('clear animals:', animals)
+# animals.clear()
+# print('clear animals:', animals)
 
-exist2 = animals.index("cat")
-print("cat exist2:", exist2)
+if "cat" in animals:
+    print("cat index", animals.index("cat"))
+else:
+    print("cat doesn't exist")
+
+print("----------")
+numbers = [2, 20, 12, 8, 57]
+
+numbers.sort()
+print("sort default:", numbers)
+
+numbers.sort(reverse=True)
+print("sort reverse:", numbers)
+
+# immutable> sort function index()
+nums = [2, 20, 12, 100]
+new_nums = sorted(nums)
+print(f"immutable sorted func:{new_nums} and the old list: {nums} ")
