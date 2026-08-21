@@ -28,4 +28,4 @@ git pull origin master
 - list
 - array
 - comprehension
-- debugging
+- packages & debugging
