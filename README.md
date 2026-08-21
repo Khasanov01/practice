@@ -29,3 +29,14 @@ git pull origin master
 - array
 - comprehension
 - packages & debugging
+
+## pip commands:
+```
+windows pip | MacOs pip3
+
+pip list
+pip install pillow
+pip uninstll pillow
+pip show pillow
+pip freeze > requirements.txt
+```
