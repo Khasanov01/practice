@@ -3,6 +3,7 @@
 (2) Package Manager & External Package
 (3) Debugging
 '''
+from PIL import Image
 import turtle
 print("===== Python Packages & Core Package =====")
 """ Python Packages/Modules: Core, File and External """
@@ -10,23 +11,35 @@ print("===== Python Packages & Core Package =====")
 
 
 # Core package
-#t = turtle.Turtle()
-#t.shape("turtle")
-#t.speed(2)
-#t.circle(150)
+# t = turtle.Turtle()
+# t.shape("turtle")
+# t.speed(2)
+# t.circle(150)
 
-#turtle.done()
+# turtle.done()
 
 print("------")
-my_file=open('material/message.txt', 'r')
+my_file = open('material/message.txt', 'r')
 try:
-    content=my_file.read()
+    content = my_file.read()
     print("content:", content)
 finally:
     my_file.close()
 
-#with
+# with
 with open('material/message.txt', 'r') as your_file:
-    your_content=your_file.read()
+    your_content = your_file.read()
     print('message:', your_content)
 print("done")
+
+
+print("===== Package Manager & External Package =====")
+""" Package Managers: pip pipenv npm yarn composer brew """
+# External Package > https://pypi.org/
+
+with Image.open("material/sign-up-form.png") as img_obj:
+    resized_img = img_obj.resize((200, 200))
+    resized_img.show()
+    resized_img.save("material/sample.png")
+
+
