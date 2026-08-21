@@ -90,3 +90,26 @@ print("sort reverse:", numbers)
 nums = [2, 20, 12, 100]
 new_nums = sorted(nums)
 print(f"immutable sorted func:{new_nums} and the old list: {nums} ")
+
+
+print("===== Lambda Functions =====")
+#lambda functionns are small anonymous functions
+
+def calculate(x,y): return x*y
+
+result=calculate(3,5)
+print('the result is', result)
+
+people = [
+    ("Robert", 20),
+    ("Steve", 19),
+    ("Joseph", 25),
+    ("Michael", 30),
+    ("Ali", 40)
+]
+people.sort()
+print("people(1)", people)
+
+# sort by age via lambda
+people.sort(key=lambda person: person[1])
+print("people(2)", people)
